@@ -23,9 +23,9 @@
   
   "dns": {
     "servers": [
-      {"tag": "proxyDns", "address": "https://dns.google/dns-query", "address_resolver": "defaultDns", "address_strategy": "ipv4_only", "detour": "🚀 节点选择"},
-      {"tag": "localDns", "address": "223.5.5.5", "address_resolver": "defaultDns", "address_strategy": "ipv4_only", "detour": "🎯 全球直连"},
-      {"tag": "defaultDns", "address": "223.5.5.5", "address_strategy": "ipv4_only", "detour": "🎯 全球直连"}
+      {"tag": "proxyDns", "address": "https://dns.google/dns-query", "address_resolver": "defaultDns", "address_strategy": "ipv4_only","client_subnet": "1.0.1.0","detour": "🚀 节点选择"},
+      {"tag": "localDns", "address": "223.6.6.6", "address_resolver": "defaultDns", "address_strategy": "ipv4_only", "detour": "🎯 全球直连"},
+      {"tag": "defaultDns", "address": "https://120.53.53.53/dns-query", "address_strategy": "ipv4_only", "detour": "🎯 全球直连"}
     ],
     "rules": [
       { "outbound": "any", "server": "defaultDns", "disable_cache": true },
@@ -89,7 +89,8 @@
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
-      { "domain_suffix": ["cftunnel.com", "sentry.io", "argotunnel.com","us.kg", "linux.do"], "outbound": "🎯 全球直连" },
+      { "ip_cidr": ["119.13.108.115", "141.11.91.219"], "outbound": "🎯 全球直连" },
+      { "domain_suffix": ["cftunnel.com", "sentry.io", "argotunnel.com","hk-3.lcf.icu","us.kg", "linux.do"], "outbound": "🎯 全球直连" },
       { "rule_set": ["geosite-private", "geoip-private"], "outbound": "🎯 全球直连" },
       { "rule_set": "geosite-chat", "outbound": "🤖 OpenAI" },
       { "rule_set": "geosite-github", "outbound": "👨‍💻 Github" },
