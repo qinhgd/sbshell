@@ -99,6 +99,9 @@
   ],
   "route": {
     "rules": [
+      { "ip_cidr": ["119.13.108.115", "141.11.91.219"], "outbound": "DIRECT" },
+      { "domain_regex": ["^stun\\..+"], "outbound": "DIRECT" },
+      { "domain_suffix": ["cftunnel.com", "sentry.io", "argotunnel.com","hk-3.lcf.icu","us.kg", "linux.do"], "outbound": "DIRECT" },
       { "protocol": [ "dns" ], "outbound": "dns-out" },
       { "domain_suffix": [ "linux.do", "ajay.app", "returnyoutubedislikeapi.com" ], "outbound": "🪜 代理域名" },
       { "domain_suffix": [ "oaifree.com", "guangbomi.com", "bootcss.com" ], "outbound": "🇨🇳 直连域名" },
