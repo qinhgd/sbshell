@@ -34,7 +34,7 @@ https://ghp.ci/https://raw.githubusercontent.com/qichiyuhub/sbshell/refs/heads/m
 ### 稳定版：  
 tproxy：
 https://ghp.ci/https://raw.githubusercontent.com/qinhgd/sbshell/refs/heads/master/config_template/config_tproxy.json
-tun:
+tun: 
 https://ghp.ci/https://raw.githubusercontent.com/qinhgd/sbshell/refs/heads/master/config_template/config_tun.json
 
 ## Youtube视频教程：
