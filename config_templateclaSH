@@ -427,15 +427,16 @@ rules:
   - RULE-SET,reject,🛑 广告拦截,no-resolve
   - RULE-SET,privacy,🛡️ 隐私防护,no-resolve
   - RULE-SET,reject-extra,🆎 AdBlock,no-resolve
+
+
+  # 本地局域网
+  - DOMAIN-SUFFIX,local,DIRECT
   - DOMAIN-SUFFIX,hexin.cn,DIRECT
   - DOMAIN-SUFFIX,10jqka.com.cn,DIRECT
   - DOMAIN-SUFFIX,u.thsi.cn,DIRECT
   - DOMAIN-SUFFIX,linux.do,DIRECT
   - DOMAIN-SUFFIX,argotunnel.com,DIRECT
   - DOMAIN-SUFFIX,sentry.io,DIRECT
-
-  # 本地局域网
-  - DOMAIN-SUFFIX,local,DIRECT
   - DOMAIN-SUFFIX,localhost,DIRECT
   - IP-CIDR,127.0.0.0/8,DIRECT
   - IP-CIDR,172.16.0.0/12,DIRECT
