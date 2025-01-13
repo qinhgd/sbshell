@@ -7,10 +7,10 @@
   
   "experimental": {
     "clash_api": {
-      "external_controller": "0.0.0.0:9095",
+      "external_controller": "0.0.0.0:9999",
       "external_ui": "/etc/sing-box/ui",
       "secret": "",
-      "external_ui_download_url": "https://ghp.ci/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_url": "https://ghp.ci/https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
       "external_ui_download_detour": "🎯 全球直连",
       "default_mode": "rule"
     },
@@ -98,11 +98,6 @@
       { "clash_mode": "direct", "outbound": "🎯 全球直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连" },
-      { "port": 7844, "outbound": "🎯 全球直连" },
-      { "port": 6288, "outbound": "🎯 全球直连" },
-      { "port": 3478, "outbound": "🎯 全球直连" },
-      { "port": 2333, "outbound": "🎯 全球直连" },
-      { "port": 11010, "outbound": "🎯 全球直连" }
       { "ip_cidr": ["119.13.108.115", "141.11.91.219"], "outbound": "🎯 全球直连" },
       { "domain_regex": ["^stun\\..+"], "outbound": "🎯 全球直连" },
       { "domain_suffix": ["cftunnel.com", "sentry.io", "argotunnel.com","hk-3.lcf.icu","us.kg", "linux.do"], "outbound": "🎯 全球直连" },
