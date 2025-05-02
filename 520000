@@ -94,6 +94,8 @@
      {"clash_mode": "direct", "outbound": "➡️ 直连"},
      {"clash_mode": "global", "outbound": "GLOBAL"},
      {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "➡️ 直连"},
+     { "ip_cidr": ["119.13.108.115", "116.206.178.250","141.11.91.219"], "outbound": "🎯 全球直连" },
+     { "domain_suffix": ["cftunnel.com", "sentry.io", "argotunnel.com","hk-3.lcf.icu","us.kg", "linux.do","soe.icu","minebg.top","9z1.me"], "outbound": "🎯 全球直连" },
      {"rule_set": "geosite-private", "outbound": "➡️ 直连"},
      {"rule_set": "geosite-chat", "outbound": "🤖 OpenAI"},
      {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
