@@ -95,7 +95,7 @@
      {"clash_mode": "global", "outbound": "GLOBAL"},
      {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "➡️ 直连"},
      { "ip_cidr": ["119.13.108.115/32", "116.206.178.250/32","208.111.34.178/32","198.41.192.0/24","198.41.200.0/24","192.73.244.245/32","208.111.40.216/32","154.16.183.156/32","141.11.91.219/32"], "outbound": "➡️ 直连" },
-     { "domain_suffix": ["cftunnel.com", "sentry.io", "argotunnel.com","lcf.icu","us.kg", "linux.do","soe.icu","minebg.top","9z1.me","ddns-ip.net","ip-ddns.com","ip-dynamic.org","cloudns.ph"], "outbound": "➡️ 直连" },
+     { "domain_suffix": ["cftunnel.com", "sentry.io", "argotunnel.com","lcf.icu","easytier.top", "linux.do","soe.icu","minebg.top","9z1.me","ddns-ip.net","ip-ddns.com","ip-dynamic.org","cloudns.ph"], "outbound": "➡️ 直连" },
      {"rule_set": "geosite-private", "outbound": "➡️ 直连"},
      {"rule_set": "geosite-chat", "outbound": "🤖 OpenAI"},
      {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
