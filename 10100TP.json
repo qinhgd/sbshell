@@ -64,9 +64,9 @@
     },
     {
       "type": "tproxy",
-      "tag": "tproxy-in-11010",
+      "tag": "tproxy-in-7890",
       "listen": "0.0.0.0",
-      "listen_port": 11010
+      "listen_port": 7890
     }
   ],
 
