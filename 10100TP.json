@@ -55,18 +55,6 @@
       "tag": "tproxy-in",
       "listen": "0.0.0.0",
       "listen_port": 7895
-    },
-    {
-      "type": "tproxy",
-      "tag": "tproxy-in-3478",
-      "listen": "0.0.0.0",
-      "listen_port": 3478
-    },
-    {
-      "type": "tproxy",
-      "tag": "tproxy-in-7890",
-      "listen": "0.0.0.0",
-      "listen_port": 7890
     }
   ],
 
@@ -110,6 +98,8 @@
       { "protocol": "dns", "action": "hijack-dns" },
       { "clash_mode": "direct", "outbound": "➡️ 直连" },
       { "clash_mode": "global", "outbound": "GLOBAL" },
+      { "port": 3478, "outbound": "➡️ 直连" },
+      { "port": 11010, "outbound": "➡️ 直连" },
       { "domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "➡️ 直连" },
       { "ip_cidr": ["119.13.108.115/32", "116.206.178.250/32", "198.41.192.0/24", "198.41.200.0/24", "192.73.244.0/24", "154.16.183.156/32", "141.11.91.0/24"], "outbound": "➡️ 直连" },
       { "domain_suffix": ["cftunnel.com", "sentry.io", "argotunnel.com", "lcf.icu", "tailscale.com", "linux.do", "soe.icu", "minebg.top", "easytier.top", "cloudns.ph"], "outbound": "➡️ 直连" },
