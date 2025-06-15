@@ -64,34 +64,33 @@
     "strategy": "ipv4_only"
   },
 "inbounds": [
-  {
-    "type": "tun",
-    "tag": "tun-in",
-    "interface_name": "meta",
-    "address": [
-      "198.18.0.0/30",
-      "fdfe:dcba:9876::1/126"
-    ],
-    "mtu": 9000,
-    "auto_route": true,
-    "auto_redirect": false,
-    "strict_route": false,
-    "route_address": [
-      "0.0.0.0/1",
-      "128.0.0.0/1",
-      "::/1",
-      "8000::/1"
-    ],
-    "route_exclude_address": [
-      "192.168.0.0/16",
-      "fc00::/7",
-      "100.64.0.0/10"
-    ],
-    "endpoint_independent_nat": false,
-    "udp_timeout": "5m",
-    "stack": "system"
-  }
-],
+{
+  "type": "tun",
+  "tag": "tun-in",
+  "interface_name": "meta",
+  "address": [
+    "198.18.0.0/30",
+    "fdfe:dcba:9876::1/126"
+  ],
+  "mtu": 9000,
+  "auto_route": true,
+  "auto_redirect": false,
+  "strict_route": false,
+  "route_address": [
+    "0.0.0.0/1",
+    "128.0.0.0/1",
+    "::/1",
+    "8000::/1"
+  ],
+  "route_exclude_address": [
+    "192.168.0.0/16",
+    "fc00::/7",
+    "100.64.0.0/10"
+  ],
+  "endpoint_independent_nat": false,
+  "udp_timeout": "5m",
+  "stack": "system"
+  },  
   {
     "type": "tproxy",
     "tag": "tproxy-in",
