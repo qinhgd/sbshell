@@ -55,7 +55,14 @@
       "tag": "tproxy-in",
       "listen": "0.0.0.0",
       "listen_port": 7895
-    }
+    },
+    {
+      "type": "mixed",
+      "listen": "0.0.0.0",
+      "listen_port": 7890,
+      "sniff": true,
+      "sniff_timeout": "5s"
+    }    
   ],
 
   "outbounds": [
