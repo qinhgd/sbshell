@@ -23,14 +23,14 @@
     "servers": [
       {
         "tag": "dns_direct",
-        "address": "https://120.53.53.53/dns-query",
+        "address": "223.5.5.5",
         "address_strategy": "ipv4_only",
         "strategy": "ipv4_only",
         "detour": "➡️ 直连"
       },
       {
         "tag": "dns_proxy",
-        "address": "https://dns.google/dns-query",
+        "address": "tls://8.8.8.8",
         "address_strategy": "ipv4_only",
         "strategy": "ipv4_only",
         "detour": "🚀 节点选择"
