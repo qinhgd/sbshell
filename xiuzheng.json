@@ -34,7 +34,6 @@
         "address_strategy": "ipv4_only",
         "strategy": "ipv4_only",
         "detour": "🚀 节点选择",
-        "client_subnet": "1.0.1.0"
       }
     ],
     "rules": [
