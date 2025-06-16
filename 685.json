@@ -10,7 +10,7 @@
       "external_controller": "0.0.0.0:9999",
       "external_ui": "/etc/sing-box/ui",
       "secret": "",
-      "external_ui_download_url": "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_url": "https://gh-proxy.com/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
       "external_ui_download_detour": "➡️ 直连",
       "default_mode": "rule"
     },
@@ -50,10 +50,13 @@
       { "rule_set": "geosite-cn", "server": "dns_direct" },
       { "rule_set": "geosite-geolocation-!cn", "server": "dns_fakeip_server" } 
     ],
-    "fakeip": {
+    "fakeip": { 
       "enabled": true,
       "inet4_range": "198.18.0.1/16",
-      "final": "dns_fakeip_server",
+      "inet6_range": "fc00::/16" 
+    },
+    "final": "dns_fakeip_server",
+    "strategy": "ipv4_only"
   },
 
   "inbounds": [
@@ -71,7 +74,6 @@
       "sniff_timeout": "5s"
     }
   ],
-
   "outbounds": [
     { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["🔯 香港自动", "🇸🇬 新加坡自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🇸🇬 新加坡节点", "🐸 手动切换", "其他手动", "♻️ 自动选择", "➡️ 直连"] },
     { "tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 节点选择", "♻️ 自动选择", "🔯 香港自动", "🇸🇬 新加坡自动", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🇸🇬 新加坡节点", "🐸 手动切换", "其他手动"] },
